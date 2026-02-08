@@ -92,3 +92,90 @@ Everything else = Object*/
 let a =Symbol("test") // this is different 
 let b =Symbol("Test") // this also a different ok
 console.log(a==b) // ans is false
+/* What are Non-Primitive (Reference) Data Types in JavaScript?
+
+Non-primitive = Complex data that can store multiple values together.
+
+They are stored by reference (not by value).
+
+Main Non-Primitive Types
+
+Object
+
+Array
+
+Function
+(In JavaScript, arrays and functions are actually special kinds of objects.)
+
+1. Object
+
+An object stores data in key–value pairs.
+
+let user = {
+  name: "Harsha",
+  age: 22
+};
+
+console.log(user.name);
+
+
+Think:
+Object = One container holding many related values
+
+Example real life: A “student record” with name, age, marks.
+
+2. Array
+
+An array stores multiple values in order (list).
+
+let numbers = [10, 20, 30];
+
+console.log(numbers[0]); // 10
+
+
+Think:
+Array = List of items
+
+Example real life: List of marks.
+
+3. Function
+
+A function is also treated as an object in JS.
+
+function greet() {
+  console.log("Hello");
+}
+
+greet();
+
+
+Think:
+Function = Reusable block of code
+
+Very Important Concept (Interview Level but Easy)
+Stored by Reference
+let obj1 = { name: "Harsha" };
+let obj2 = obj1;
+
+obj2.name = "Rahul";
+
+console.log(obj1.name);
+
+
+Output:
+
+Rahul
+
+
+Why?
+
+Because both point to same memory location.
+
+Primitive vs Non-Primitive (Easy Table)
+Primitive	Non-Primitive
+Stores single value	Stores multiple values
+Stored by value	Stored by reference
+Example: number, string	Example: object, array
+One Powerful Line to Remember
+
+Non-primitive data types are objects that store multiple values and are passed by reference. */
