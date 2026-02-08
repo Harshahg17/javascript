@@ -88,3 +88,7 @@ BigInt
 Symbol
 
 Everything else = Object*/
+// this about about symbol datatype in javascript
+let a =Symbol("test") // this is different 
+let b =Symbol("Test") // this also a different ok
+console.log(a==b) // ans is false
