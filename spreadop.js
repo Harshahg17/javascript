@@ -13,4 +13,14 @@
 // console.log(obj1.name)
 
 
-let obj1
+let obj1={
+     name:"harsha",
+     age:"21"
+}
+
+let obj2={...obj1}
+obj2.name="ravi";
+console.log(obj1)
+console.log(obj2)
+
+//this about spread operator used for the making two different copies of memory 
